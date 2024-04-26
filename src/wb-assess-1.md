@@ -14,7 +14,7 @@
 Which statement is true about JavaScript?
 
 - [ ] **A.** JavaScript is case insensitive, so `true` is the same as `True`.
-- [ ] **B.** JavaScript ignores whitespace characters like spaces and newline characters.
+- [x] **B.** JavaScript ignores whitespace characters like spaces and newline characters.
 - [ ] **C.** JavaScript requires you to end all statements with a semicolon (`;`).
 - [ ] **D.** All of the above are true.
 - [ ] **E.** None of the above are true.
@@ -25,15 +25,15 @@ Assume you've initialized a variable, `sum`, like so:
 
 ```js
 let sum = 1;
-```
+``` sum += 1
 
 Which of these lines of code will cause `sum` to have a value of `2`? You can select more than one
 answer.
 
-- [ ] **A.** `sum++`
-- [ ] **B.** `sum += 1`
-- [ ] **C.** `sum = sum + 1`
-- [ ] **D.** All of the above
+- [x] **A.** `sum++`
+- [x] **B.** `sum += 1`
+- [x] **C.** `sum = sum + 1`
+- [x] **D.** All of the above
 - [ ] **E.** Some of the above
 
 ### A.3. What's the output?
@@ -45,7 +45,7 @@ const result = 1 < 100 || 'hello' === 'hi';
 console.log(result);
 ```
 
-- [ ] **A.** `true`
+- [x] **A.** `true`
 - [ ] **B.** `false`
 - [ ] **C.** `undefined`
 - [ ] **D.** N/A because the code has an error
@@ -64,7 +64,7 @@ if (word) {
 ```
 
 - [ ] **A.** `yay!`
-- [ ] **B.** `no :(`
+- [x] **B.** `no :(`
 - [ ] **C.** An empty line
 - [ ] **D.** N/A because the code has an error
 
@@ -90,7 +90,7 @@ cherry
 - [ ] **A.** `const fruit in fruits`
 - [ ] **B.** `const fruit of fruits`
 - [ ] **C.** `let fruit = 0; fruit < fruits.length; fruit++`
-- [ ] **D.** None of the above
+- [x] **D.** None of the above
 
 ### A.6. What will happen?
 
@@ -103,7 +103,7 @@ function makeWordArray(phrase) {
 }
 ```
 
-- [ ] **A.** Nothing happens because the program errors out.
+- [x] **A.** Nothing happens because the program errors out.
 - [ ] **B.** It defines a function called `makeWordArray` and converts `phrase` into an array of words.
 - [ ] **C.** It defines a function called `makeWordArray` and outputs a word array.
 - [ ] **D.** It defines a function called `makeWordArray` but nothing else happens.
@@ -118,7 +118,7 @@ console.log'hi';
 // hi
 ```
 
-- [ ] **A.** The code causes an error because there should be parentheses around `'hi'`.
+- [x] **A.** The code causes an error because there should be parentheses around `'hi'`.
 - [ ] **B.** The code causes an error because `console.log` isn't a function.
 - [ ] **C.** The code causes an error because the code will run but it won't output anything.
 - [ ] **D.** There is no error; the code generates the expected output.
@@ -134,7 +134,7 @@ console.log(fruits[fruits.indexOf('apple')]);
 // apple
 ```
 
-- [ ] **A.** The code causes an error because `fruits[fruits.indexOf('apple')]` isn't valid
+- [x] **A.** The code causes an error because `fruits[fruits.indexOf('apple')]` isn't valid
   JavaScript syntax.
 - [ ] **B.** The code causes an error because `fruits.indexOf('apple')` doesn't return a valid
   index number.
@@ -157,7 +157,7 @@ for (const w of words) {
 ```
 
 - [ ] **A.** The code causes an error because `w` needs to be a `let` variable.
-- [ ] **B.** The code causes an error because `words` is an array and `toUpperCase()` isn't a
+- [x] **B.** The code causes an error because `words` is an array and `toUpperCase()` isn't a
   valid array function.
 - [ ] **C.** The code causes an error because it will output `['JS', 'HTML', 'CSS']` three times.
 - [ ] **D.** There is no error; the code generates the expected output.
@@ -178,7 +178,7 @@ console.log(numStrings);
 ```
 
 - [ ] **A.** The code causes an error because `numStrings` needs to be a `let` variable.
-- [ ] **B.** The code causes an error because `i <= nums.length` should be `i < nums.length`
+- [x] **B.** The code causes an error because `i <= nums.length` should be `i < nums.length`
 - [ ] **C.** The code causes an error because `i++` isn't valid JavaScript syntax.
 - [ ] **D.** There is no error; the code generates the expected output.
 
@@ -210,7 +210,7 @@ outputArgs('hi', 'bye');
   of the expected output.
 - [ ] **C.** The code causes an error because the `a`, `b`, and `c` variables haven't been
   initialized.
-- [ ] **D.** There is no error; the code generates the expected output.
+- [x] **D.** There is no error; the code generates the expected output.
 
 ## B. Free response
 
@@ -225,13 +225,15 @@ Functions can be used to create named blocks of code that can be executed/reused
 **_What is the difference between `console.log` and `return`?_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+console.log will show the progress of the code to the developer, so the developer knows how this will actually look like when the codes runs.
+return will show the result of what has been executed with the code i have create. 
 ```
 
 **_What's the difference between defining and calling a function?_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+when I am defining a function i am stablishing a function's name so it will look like function girlNames() {}.
+calling a function means that i am invoking a function, when I am calling a function i am stablishing arguments for my function's name parameters.
 ```
 
 ### B.2. Describe these data types.
@@ -241,25 +243,25 @@ Write a short description of the following data types:
 **_String_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+strings is the data or text 
 ```
 
 **_Number_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+Numbers are values
 ```
 
 **_Boolean_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+Boolean means true or false
 ```
 
 **_Array_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+Array is like a box that holds different data or elements inside of [] 
 ```
 
 ### B.3. Trace the value of `x`
@@ -282,7 +284,7 @@ completed for you.
 
 ```
 Initial values: y = 0, x = 5
-1:              y = 1, x = ??
-2:              y = 2, x = ??
-3:              y = 3, x = ??
+1:              y = 1, x = 10
+2:              y = 2, x = 15
+3:              y = 3, x = 20
 ```
