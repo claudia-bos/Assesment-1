@@ -14,7 +14,7 @@ let div = divide(10, 2)
 //   average(10, 2);
 //   => 6
 function average(x, y) {
-  return x + y / 2
+  return (x + y) / 2
 }
 let aver = average(10 + 2 / 2)
 
@@ -40,7 +40,7 @@ let aprox = approximatelyEqual(10.001, 10)
 //   fullName('John', 'Doe');
 //   => 'John Doe'
 function fullName(firstName, lastName) {
-  return firstName + ' ' + lasName
+  return firstName + ' ' + lastName
 }
 let result = fullName('John', 'Doe')
 
@@ -50,7 +50,7 @@ let result = fullName('John', 'Doe')
 //   generateSentence('Kay', 'coffee', 'the local cafe');
 //   => 'Kay was drinking coffee at the local cafe.'
 function generateSentence(person, beverage, location) {
-   return person + 'was drinking' + beverage + 'at' + location
+   return person + 'was drinking' + beverage + 'at' + location + '.'
 }
 let generate = generateSentence('kay', 'was drinking', 'coffee', 'at', 'the local cafe')
 
@@ -60,12 +60,17 @@ let generate = generateSentence('kay', 'was drinking', 'coffee', 'at', 'the loca
 //   censorVowels('javascript');
 //   => 'j*v*scr*pt'
 
+const censorVowels = 'javascript'
+const censorVowelsArray = [...censorVowels]
 
-function censorVowels(string) {
-  const vowels = 'aeiouAEIOU'
-  return string.replace(/[aeiouAEIOU]/g, '*')
+let replacedEveryOther = ''
+censorVowelsArray.foreach((letter, idx) => {
+  if (idx % 2 === 0) {
+    replacedEveryOther += letter
+  } else {
+    replacedEveryOther += '*'
+  }
 }
-let replaced = censorVowels('javascript')
 
 
 
@@ -75,9 +80,16 @@ let replaced = censorVowels('javascript')
 //   => 'hElLo wOrLd'
 
 function stickyCase(string) {
-  return stickyCase.replace(/hello/gi, 'hElLo' ).replace(/world/gi, 'wOrLd')
+  let result = ''
+  for (let i = 0; i < string.length; i += 1){
+    if (i % 2 === 0) {
+      result += string[i].tolowerCase()
+    } else {
+      result += string[i].toUpperCase()
+    }
+   }
+  return result
 }
-let place = stickyCase('hello world')
 
 
 // Return the given string in leetspeak. Leetspeak is a modified version of
@@ -92,11 +104,28 @@ let place = stickyCase('hello world')
 // Ex.:
 //   leetspeak('javascript');
 //   => 'j4v45cr1p7'
+
 function leetspeak(string) {
-  return leetspeak.replace(/a/gi, '4').replace(/e/gi, '3').replace(/i/gi, '1').replace(/o/gi, '0').replace(/s/gi, '5').replace(/t/gi, '7')
-}
-let rep = leetspeak('javascript')
-export {
+  const leetspeakMap = {
+    'a': '4',
+    'e': '3',
+    'i': '1',
+    'o': '0',
+    's': '5',
+    't': '7'
+  }
+    
+let leetspeakString = ''
+  for (let i = 0; i < string.length; i++) {
+    if (leetspeakMap.hasOwnProperty(char.toLowerCase())) {
+      leetspeakString += leetspeakMap[char.toLowerCase()]
+    } else {
+      leetspeakString += char
+    }
+  }
+   returnleetspeakString
+
+
   approximatelyEqual,
   average,
   censorVowels,
