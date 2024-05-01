@@ -123,7 +123,7 @@ let leetspeakString = ''
       leetspeakString += char
     }
   }
-   returnleetspeakString
+   return leetspeakString
 
 
   approximatelyEqual,
